@@ -1,3 +1,4 @@
+![anthro-driver](http://i.imgur.com/96jFE2K.jpg)
 # anthro-driver
 *Anthro WebdriverIO POC*
 
