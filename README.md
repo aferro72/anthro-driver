@@ -1,9 +1,9 @@
-## anthro-driver
+# anthro-driver
 Anthro WebdriverIO POC
 
 This is a proof of concept for the end-to-end test automation using [WebdriverIO] on the Anthropologie website. 
 
-# Getting Started
+## Getting Started
 
 * You will need node.js and NPM installed on your machine.
 
