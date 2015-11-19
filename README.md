@@ -1,5 +1,5 @@
 # anthro-driver
-Anthro WebdriverIO POC
+*Anthro WebdriverIO POC*
 
 This is a proof of concept for the end-to-end test automation using [WebdriverIO] on the Anthropologie website. 
 
