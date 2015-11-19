@@ -15,11 +15,16 @@ This is a proof of concept for the end-to-end test automation using [WebdriverIO
 
 `java -jar /path/to/selenium-server-standalone-2.46.0.jar`
 
-*Run the below command to run your tests specified in the wdio configuration file:
+* If you haven't installed Chromedriver, install it now via NPM
 
-`wdio ./wdio.conf.anthro.us.js` 
+`npm install -g chromedriver`
+
+* Run the below command to run your tests specified in the wdio configuration file:
+
+`wdio wdio.conf.anthro.us.js` 
 
 (This is assuming you have changed your directory to the anthro-driver directory)
+
 
 [WebdriverIO]: <http://webdriver.io/>
 [WebdriverIO Install Page]: <http://webdriver.io/guide/getstarted/install.html>
