@@ -8,15 +8,16 @@ This is a proof of concept for the end-to-end test automation using [WebdriverIO
 
 Clone this repo onto your machine
 
-* You will need [node.js] and NPM installed
+* You will need [node.js] and NPM installed and [Java JDK]
 
 * You will also need to install [WebdriverIO], wdio, and selenium standalone server
 
 Run the below command to install these packages:
 
 `npm install -g webdriverio && npm install selenium-standalone@latest -g`
+`selenium-standalone install`
 
-* Make sure you have selenium-webdriver-standalone running. If it's not running, run the below command in your terminal:
+* Make sure you have selenium-webdriver-standalone running. To do this, run the below command in your terminal:
 
 `selenium-standalone start`
 
@@ -30,7 +31,10 @@ Run the below command to install these packages:
 
 (This is assuming you have changed your directory to the anthro-driver directory)
 
+Finally, to start creating and writing tests, create your own branch and begin!
+`git checkout -b 'MYNAME-FEATURE'`
 
 [WebdriverIO]: <http://webdriver.io/>
 [WebdriverIO Install Page]: <http://webdriver.io/guide/getstarted/install.html>
 [node.js]: <http://nodejs.org/>
+[Java JDK]: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
