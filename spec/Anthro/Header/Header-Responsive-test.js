@@ -1,33 +1,36 @@
 describe('Anthropologie - Header - Responsive Suite', function () {
 
-it('should check for given a small screen, check that the header displays appropriate', function() {
+it('should confirm given a small screen, the responsive menu displays', function() {
 
 		return browser
-			.windowHandleSize({width: 989, height: 720})
+			.setViewportSize({width: 970, height: 720}, false)   // width < 989 will update the header navigation to small screen version
 			.url('/')
-
             .waitForExist('.anthro-modal-close',15000).then(function(){
-
-            	 browser.click('.anthro-modal-close');})
-
-			.isVisibleWithinViewport('.rwd-menu-open').then(function(visibility){
-				expect(visibility).toBe(true);
-
-			})
-			.windowHandleSize({width: 1300 , height: 900 })
-			.isVisibleWithinViewport('div.header-wrap > nav > ul > li:nth-of-type(1)').then(function(visibility){
-
+            	 browser.click('.anthro-modal-close');  // Close the email signup modal
+            })
+			.isVisible('.stitch1').then(function(visibility){ // Confirm if an element in the small screen navigation is visible
+				console.log(visibility);
 				expect(visibility).toBe(true);
 			})
+			.isVisible('.sn-ACCESSORIES').then(function(visibility) { // Confirm an element in the large screen nav is not visible
+				console.log(visibility);
+				expect(visibility).toBe(false);
+			})
+			
 });
 
-		xit('should check other screen size thing', function(){
+it('should check given a large screen, appropriate header displays', function(){
 
-			return browser
-
-			.element('.SomeElement')
-
+	return browser
+		.windowHandleSize({width: 1300 , height: 900 })
+		.isVisible('div.header-wrap > nav > ul > li:nth-of-type(1)').then(function(visibility){
+				expect(visibility).toBe(true);
+			})
+		.isVisible('.rwd-menu-open').then(function(visibility) {
+			expect(visibility).toBe(false);
+			
 		})
+})
 
 
 });

@@ -13,11 +13,12 @@
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './spec/Anthro/*/*.js'
+        './spec/Anthro/Category/*.js'
     ],
     // Patterns to exclude.
     exclude: [
-          './spec/Anthro/*/EU-*.js'
+          './spec/Anthro/*/EU-*.js',
+	  './spec/Anthro/*/*-Module.js'
     ],
     //
     // ============
@@ -47,13 +48,13 @@
 
         
     // },
-    // {
+    {
 
-    //     browserName: 'firefox',
-    //     screenResolution: '1280x800'
+        browserName: 'firefox',
+        screenResolution: '1280x800'
 
         
-    // }
+    }
 ],
     //
     // ===================
