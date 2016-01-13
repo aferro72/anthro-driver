@@ -13,7 +13,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './spec/Anthro/Header/Header-Responsive-*.js'
+        './spec/A15/Homepage/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -47,12 +47,17 @@ exports.config = {
 
         
     // },
-    {
+    // {
 
-        browserName: 'firefox',
-        screenResolution: '1280x800'
+    //     browserName: 'firefox',
+    //     screenResolution: '1280x800'
 
         
+    // },
+    {
+        browserName: 'phantomjs',
+        screenResolution: '1280x800'
+
     }
 ],
     //
@@ -72,7 +77,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", the base url gets prepended.
-    baseUrl: 'http://www.anthropologie.com/uk/en',
+    baseUrl: 'http://localhost:9020',
     //
     // Default timeout for all waitForXXX commands.
     waitforTimeout: 18000,
