@@ -12,7 +12,7 @@ describe('Anthropologie - Category - Product Info', function() {
 			});
 	});
 
-	it('should confirm that each product contains a name', function() {
+	xit('should confirm that each product contains a name', function() {
 	    return browser
 	        .execute(function() {
 	            i = 1;

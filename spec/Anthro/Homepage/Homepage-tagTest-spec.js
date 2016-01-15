@@ -1,14 +1,18 @@
 describe('Executing javascript on the Homepage', function() {
 
     it('Should confirm Correct Coremetrics ClientID', function(done) {
-        browser
-            .url('http://www.anthropologie.com/')
+        return browser
+            .url('/anthro/homepage.index')
             .waitForExist('.anthro-modal-close',15000).then(function(){
                 client.click('.anthro-modal-close');})
             .pause(2500)
+            .click('#storeLocator')
+            .getText('#search', 'values').then(function(result) {
+                
+            })
 
-
-           .execute(function() {
+           .execute(
+            function() {
             return cm_ClientID;
              }).then(function(result){
                 expect(result.value).toEqual('90041356');
