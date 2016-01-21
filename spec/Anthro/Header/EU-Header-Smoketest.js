@@ -39,7 +39,7 @@ describe('Anthropologie EU Header Suite', function() {
 
     });
 
-    it('should get your location', function(){
+    xit('should get your location', function(){
 
     return browser
         .location(function(location){

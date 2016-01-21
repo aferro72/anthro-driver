@@ -13,13 +13,14 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './spec/A15/*/*.js'
+        './spec/A15/Store-Locator/Search-spec.js',
+        './spec/A15/Store-Locator/StoreDetail-spec.js'
     ],
     exclude: [
     // Patterns to exclude.
-        './spec/A15/*/*-spec.js',
         './spec/A15/*/angular-driver.js', // Ignore angular driver examples
-        './spec/A15/*/Header-Smoketest-A15-spec.js' // ignore angular driver examples
+        './spec/A15/*/Header-Smoketest-A15-spec.js',
+        './spec/A15/*/Smoke-*.js' // ignore angular driver examples
     ],
     //
     // ============
@@ -35,6 +36,13 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [
+    // {
+
+    //     browserName: 'phantomjs',
+    //     screenResolution: '1280x800'
+
+        
+    // },
     {
 
         browserName: 'chrome',
@@ -42,20 +50,13 @@ exports.config = {
 
         
     },
-    // {
+ //   {
 
-    //     browserName: 'safari',
-    //     screenResolution: '1280x800'
-
-        
-    // },
-   {
-
-     browserName: 'firefox',
-      screenResolution: '1280x800'
+ //     browserName: 'firefox',
+ //      screenResolution: '1280x800'
 
         
- },
+ // },
 ],
     //
     // ===================

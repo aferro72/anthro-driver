@@ -13,13 +13,13 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './spec/Anthro/Header/Header-Responsive-*.js'
+        './spec/Anthro/Header/*.js'
     ],
     // Patterns to exclude.
     exclude: [
         './spec/Anthro/*/US-*.js'
     ],
-    //
+    //  
     // ============
     // Capabilities
     // ============
@@ -33,13 +33,13 @@ exports.config = {
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
     capabilities: [
-    // {
+    {
 
-    //     browserName: 'chrome',
-    //     screenResolution: '1280x800'
+        browserName: 'chrome',
+        screenResolution: '1280x800'
 
         
-    // },
+    },
     // {
 
     //     browserName: 'safari',
@@ -50,9 +50,7 @@ exports.config = {
     {
 
         browserName: 'firefox',
-        screenResolution: '1280x800'
-
-        
+        screenResolution: '1280x800'        
     }
 ],
     //

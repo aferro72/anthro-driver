@@ -10,6 +10,9 @@ Clone this repo onto your machine
 
 * You will need [node.js] and NPM installed and [Java JDK]
 
+* Mac users: if you have just installed node for the first time, run the below command to update your permissions when installing global packages:
+`sudo chown -R $(whoami) /usr/local/lib/node_modules`
+
 * You will also need to install [WebdriverIO], wdio, and selenium standalone server
 
 Run the below command to install these packages:
@@ -27,6 +30,9 @@ Run the below command to install these packages:
 * If you haven't installed Chromedriver, install it now via NPM
 
 `npm install -g chromedriver`
+
+* Mac users: run this command after installing chromedriver
+`chmod 755 /usr/local/lib/node_modules/selenium-standalone/.selenium/chromedriver/2.20-x64-chromedriver`
 
 * Run the below command to run your tests specified in the wdio configuration file:
 
