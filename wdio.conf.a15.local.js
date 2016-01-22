@@ -14,7 +14,7 @@ exports.config = {
     //
     specs: [
         './spec/A15/Store-Locator/Search-spec.js',
-        './spec/A15/Store-Locator/StoreDetail-spec.js'
+        // './spec/A15/Store-Locator/StoreDetail-spec.js'
     ],
     exclude: [
     // Patterns to exclude.

@@ -13,7 +13,7 @@
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './spec/Anthro/Header/*.js'
+        './spec/Anthro/Store-Locator/search-spec.js'
     ],
     // Patterns to exclude.
     exclude: [
