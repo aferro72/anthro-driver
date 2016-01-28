@@ -14,7 +14,9 @@ Clone this repo onto your machine
 
 Run the below command to install these packages:
 
-`npm install -g webdriverio && npm install selenium-standalone@latest -g`
+`npm install -g webdriverio` 
+
+`npm install selenium-standalone@latest -g`
 
 `npm install -g jasmine`
 
